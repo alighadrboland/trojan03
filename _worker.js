@@ -1,12 +1,11 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
 
-let Pswd = 'trojan';
-const proxyIPs = ["cdn.xn--b6gac.eu.org"]; //workers.cloudflare.cyou bestproxy.onecf.eu.org cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org
+let Pswd = 'trojan03';
 let hostnames = [''];
 
 let sha224Password ;
-let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+let proxyIP = 'pa.alighadrboland.ir';
 const worker_default = {
     /**
      * @param {import("@cloudflare/workers-types").Request} request
@@ -23,7 +22,7 @@ const worker_default = {
             if (!upgradeHeader || upgradeHeader !== 'websocket') {
 				const url = new URL(request.url);
 				switch (url.pathname) {
-					case '/cf':
+					case '/tr03':
 						return new Response(JSON.stringify(request.cf, null, 4), {
 							status: 200,
 							headers: {

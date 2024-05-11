@@ -22,7 +22,7 @@ const worker_default = {
             if (!upgradeHeader || upgradeHeader !== 'websocket') {
 				const url = new URL(request.url);
 				switch (url.pathname) {
-					case '/tr03':
+					case '/cf':
 						return new Response(JSON.stringify(request.cf, null, 4), {
 							status: 200,
 							headers: {

@@ -1,7 +1,7 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
 
-let Pswd = 'trojan03';
+let Pswd = 'tr03';
 let hostnames = [''];
 
 let sha224Password ;

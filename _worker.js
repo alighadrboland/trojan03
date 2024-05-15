@@ -5,8 +5,7 @@ let Pswd = 'tr03';
 let hostnames = [''];
 
 let sha224Password ;
-const proxyIPs = ['cdn-all.xn--b6gac.eu.org','cdn.xn--b6gac.eu.org','workers.cloudflare.cyou','edgetunnel.anycast.eu.org','workers.bestip.one','proxyip.aliyun.fxxk.dedyn.io','proxyip.vultr.fxxk.dedyn.io','proxyip.multacom.fxxk.dedyn.io'];
-let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+let proxyIP =['pa.alighadrboland.ir'];
 const worker_default = {
     /**
      * @param {import("@cloudflare/workers-types").Request} request
